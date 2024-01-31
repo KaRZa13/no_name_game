@@ -1,7 +1,6 @@
 import pygame
 
 
-
 class Projectile(pygame.sprite.Sprite):
     def __init__(self, player):
         super().__init__()
@@ -23,14 +22,14 @@ class Projectile(pygame.sprite.Sprite):
 
     def remove(self):
         self.player.all_projectiles.remove(self)
-        print("Supprimer")
 
     def move(self):
         self.rect.x += self.velocity
-        self.rotate()
 
         # verifier la collision avec un ennemi
-        for enemy in self.player.game.check_collision(self, self.player.game.all_enemies):
+        for enemy in self.player.game.check_collision(
+            self, self.player.game.all_enemies
+        ):
             self.remove()
             # inflige des dégâts
             enemy.damage(self.player.attack)

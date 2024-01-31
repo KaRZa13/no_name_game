@@ -31,14 +31,13 @@ player = Player(Game)
 now = pygame.time.get_ticks()
 last_shot = now
 last_spawn = now
-time_between_shot = 100
+time_between_shot = 300
 time_between_spawn = 1000
 
 running = True
 
 # boucle du jeu
 while running:
-
     # appliquer l'arrière-plan
     screen.blit(background, (0, 0))
 

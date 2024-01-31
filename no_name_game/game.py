@@ -19,7 +19,6 @@ class Game:
         self.pressed = {}
         self.enemy_spawn_delay = 1500
 
-
     def start(self):
         self.is_playing = True
         self.spawn_enemy()
@@ -56,7 +55,9 @@ class Game:
 
     # Système de collision avec les enemies
     def check_collision(self, sprite, group):
-        return pygame.sprite.spritecollide(sprite, group, False, pygame.sprite.collide_mask)
+        return pygame.sprite.spritecollide(
+            sprite, group, False, pygame.sprite.collide_mask
+        )
 
     def spawn_enemy(self):
         if self.enemy_count < self.max_enemies:
