@@ -25,7 +25,10 @@ nouvelle_taille_background = (1920, 720)
 background = pygame.transform.scale(background, nouvelle_taille_background)
 
 # importation du joueur
-player = Player(Game)
+player = Player(game)
+
+LARGEUR_ECRAN = 1920
+HAUTEUR_ECRAN = 720
 
 # paramètre de temps
 now = pygame.time.get_ticks()
