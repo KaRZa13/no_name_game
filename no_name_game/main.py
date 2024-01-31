@@ -54,9 +54,9 @@ while running:
     now = pygame.time.get_ticks()
 
     # gestion du spawn des premiers énnemies
-    """if now - last_spawn > time_between_spawn:
+    if now - last_spawn > time_between_spawn:
         game.spawn_enemy()
-        last_spawn = now"""
+        last_spawn = now
 
     # gestion de la cadence de tir
     if game.pressed.get(pygame.K_SPACE) and now - last_shot > time_between_shot:

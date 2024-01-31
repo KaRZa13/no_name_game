@@ -21,7 +21,7 @@ class Game:
 
     def start(self):
         self.is_playing = True
-        """self.spawn_enemy()"""
+        self.spawn_enemy()
 
     def game_over(self):
         if self.player.health <= 0:
