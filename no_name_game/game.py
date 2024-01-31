@@ -21,7 +21,7 @@ class Game:
 
     def start(self):
         self.is_playing = True
-        self.spawn_enemy()
+        """self.spawn_enemy()"""
 
     def game_over(self):
         if self.player.health <= 0:
@@ -64,3 +64,4 @@ class Game:
             enemy = Enemy(self)
             self.all_enemies.add(enemy)
             self.enemy_count += 1
+        print("ntm")
