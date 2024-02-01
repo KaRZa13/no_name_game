@@ -22,9 +22,9 @@ class Enemy(pygame.sprite.Sprite):
         # infliger les dégâts
         self.health -= amount
         if self.health <= 0:
-            # respawn
-            self.rect.x = 1800
-            self.health = self.max_health
+            self.remove()
+            """self.rect.x = 1800
+            self.health = self.max_health"""
 
     def update(self):
         amplitude = 250

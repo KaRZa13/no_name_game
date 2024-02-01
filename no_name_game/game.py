@@ -64,4 +64,3 @@ class Game:
             enemy = Enemy(self)
             self.all_enemies.add(enemy)
             self.enemy_count += 1
-        print("ntm")
